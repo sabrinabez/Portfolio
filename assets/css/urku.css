@@ -1231,6 +1231,10 @@ body {
 .item-13 {
   background-image: url("../img/project-13.jpg");
 }
+
+.aboutme {
+  background-image: url("../img/aboutme.jpg"); 
+}
 @media (min-width: 40em) {
   #layout-grid:checked ~ .rk-portfolio .item-13 {
     background-position: top right;
