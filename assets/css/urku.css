@@ -1951,12 +1951,13 @@ body {
           align-self: baseline;
   display: none;
 }
-@media (min-width: 64em) {
+@media (min-width: 40em) {
   .rk-navigation {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display:         flex;
+    margin: auto;
   }
 }
 
@@ -1992,7 +1993,6 @@ body {
   color: #a0a0a0;
 }
 .rk-menu__link {
-  padding-bottom: 4.2rem;
 }
 .rk-menu__sub {
   background-color: white;
@@ -2064,6 +2064,7 @@ body {
     background-color: rgba(255, 255, 255, .95);
     overflow: auto;
   }
+
   #mobile-menu:checked ~ .rk-topbar .rk-menu {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
