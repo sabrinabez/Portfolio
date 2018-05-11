@@ -2041,7 +2041,7 @@ body {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
-    display:         flex;
+    display:         none;
     position: fixed;
     top: 0;
     left: 0;
