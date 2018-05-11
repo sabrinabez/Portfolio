@@ -83,8 +83,6 @@ body {
 @media (min-width: 64em) {
   .rk-topbar {
     padding-bottom: 0;
-    padding-left: 10em;
-    padding-right: 10em;
   }
 }
 
@@ -1233,13 +1231,6 @@ body {
 .item-13 {
   background-image: url("../img/project-13.jpg");
 }
-
-.aboutme {
-  width: 250px;
-  min-height: 250px;
-  position: static;
-  margin: auto;
-}
 @media (min-width: 40em) {
   #layout-grid:checked ~ .rk-portfolio .item-13 {
     background-position: top right;
@@ -1925,7 +1916,6 @@ body {
 
 .contact__desc {
   letter-spacing: .05em;
-  padding: 10px;
 }
 
 .contact__phone {
@@ -1951,13 +1941,12 @@ body {
           align-self: baseline;
   display: none;
 }
-@media (min-width: 40em) {
+@media (min-width: 64em) {
   .rk-navigation {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display:         flex;
-    margin: auto;
   }
 }
 
@@ -1993,6 +1982,7 @@ body {
   color: #a0a0a0;
 }
 .rk-menu__link {
+  padding-bottom: 4.2rem;
 }
 .rk-menu__sub {
   background-color: white;
@@ -2034,9 +2024,9 @@ body {
           transform: translateY(0);
   visibility: visible;
   z-index: 2;
-}SABRINA 
+}
 
-#@media (max-width: 40em) {
+@media (max-width: 64em) {
   #mobile-menu:checked ~ .rk-topbar .rk-navigation {
     display: -webkit-box;
     display: -webkit-flex;
