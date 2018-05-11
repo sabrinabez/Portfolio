@@ -83,6 +83,8 @@ body {
 @media (min-width: 64em) {
   .rk-topbar {
     padding-bottom: 0;
+    padding-left: 10em;
+    padding-right: 10em;
   }
 }
 
@@ -1233,7 +1235,10 @@ body {
 }
 
 .aboutme {
-  background-image: url("../img/aboutme.jpg"); 
+  width: 250px;
+  min-height: 250px;
+  position: static;
+  margin: auto;
 }
 @media (min-width: 40em) {
   #layout-grid:checked ~ .rk-portfolio .item-13 {
@@ -1920,6 +1925,7 @@ body {
 
 .contact__desc {
   letter-spacing: .05em;
+  padding: 10px;
 }
 
 .contact__phone {
