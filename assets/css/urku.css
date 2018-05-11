@@ -2036,7 +2036,7 @@ body {
   z-index: 2;
 }
 
-@media (max-width: 64em) {
+#@media (max-width: 40em) {
   #mobile-menu:checked ~ .rk-topbar .rk-navigation {
     display: -webkit-box;
     display: -webkit-flex;
