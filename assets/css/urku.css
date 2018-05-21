@@ -10,6 +10,18 @@ body {
   margin: 0;
 }
 
+.aboutme{
+  width:30%;
+  margin: auto;
+}
+
+@media (max-width: 1024px){
+  .aboutme{
+  width: 300px;
+  margin:auto;
+}
+}
+
 .rk-container {
   margin-right: auto;
   margin-left: auto;
@@ -1177,7 +1189,7 @@ body {
 }
 
 .item-2 {
-  background-image: url("../img/project-2.jpg");
+  background-image: url("../img/chameleon-hero.jpg");
 }
 
 .item-3 {
