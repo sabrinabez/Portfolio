@@ -65,9 +65,17 @@
         </div>
       </div>
         <div class="ae-grid ae-grid--collapse">
-          <div class="ae-grid__item item-lg--auto"><img src="assets/img/project-1.jpg" alt="Urku Portfolio"></div>
+        <div class="ae-grid__item item-lg-8">
+          <img id="myImg" src="assets/img/chameleon-1.jpg" alt="Trolltunga, Norway">
+</div></div>
+          <div class="ae-grid__item item-lg-4"><img src="assets/img/chameleon-hero.jpg" alt="Urku Portfolio"></div>          
         </div>
       </div>
+                <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01">
+            <div id="caption"></div>
+          </div>
       <div class="ae-container-fluid au-pt-4 au-pb-4">
         <div class="group-buttons"><a href="#0" class="au-mt-2 arrow-button arrow-button--right">Next Project<span class="arrow-cont">
               <svg>
@@ -104,6 +112,28 @@
         </div>
       </div>
     </footer>
+    <script>// Get the modal
+        // Get the modal
+    var modal = document.getElementById('myModal');
+
+    // Get the image and insert it inside the modal - use its "alt" text as a caption
+    var img = document.getElementById('myImg');
+    var modalImg = document.getElementById("img01");
+    var captionText = document.getElementById("caption");
+    img.onclick = function(){
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+    }
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() { 
+        modal.style.display = "none";
+    }
+</script>
     <script src="assets/js/svg4everybody.min.js"></script>
     <script>svg4everybody();</script>
   </body>
