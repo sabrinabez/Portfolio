@@ -1263,6 +1263,18 @@ body {
   background-image: url("../img/brightonhero.jpg");
 }
 
+.exhibit {
+  background-image: url("../img/chamexhero.jpg");
+}
+
+.mystic {
+  background-image: url("../img/mystichero.gif");
+}
+
+.lgbt {
+  background-image: url("../img/lgbthero.gif");
+}
+
 .item-5 {
   background-image: url("../img/dollihero.gif");
 }
