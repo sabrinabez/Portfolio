@@ -66,16 +66,29 @@
       </div>
         <div class="ae-grid ae-grid--collapse">
         <div class="ae-grid__item item-lg-8">
-          <img id="myImg" src="assets/img/chameleon-1.jpg" alt="Trolltunga, Norway">
-</div></div>
-          <div class="ae-grid__item item-lg-4"><img src="assets/img/chameleon-hero.jpg" alt="Urku Portfolio"></div>          
+          <img src="assets/img/chameleon-1.jpg" alt="Six-Pack Soy Latte">
+</div>
+          <div class="ae-grid__item item-lg-4"><img src="assets/img/chameleon-hero.jpg" alt="Standalone Soy Latte"></div>          
         </div>
       </div>
-                <div id="myModal" class="modal">
-            <span class="close">&times;</span>
-            <img class="modal-content" id="img01">
-            <div id="caption"></div>
-          </div>
+<button class="subgallery"> <h2 class="ae-theta rk-portfolio-category ">Process</h2></button>
+<div class="subgalcon">
+    <div class="ae-masonry ae-masonry-md-2 ae-masonry-xl-4"> 
+         <img src="assets/img/chameleon-sketch1.jpg">
+         <img src="assets/img/chameleon-sketch2.jpg">
+         <img src="assets/img/chameleon-proto1.jpg">
+         <img src="assets/img/chameleon-proto2.jpg">
+         <img src="assets/img/chameleon-pack1.jpg">
+         <img src="assets/img/chameleon-pack2.jpg">
+         <img src="assets/img/chameleon-pack.jpg">
+         <img src="assets/img/chameleon-label.jpg">
+         <img src="assets/img/chameleon-fin1.jpg">
+         <img src="assets/img/chameleon-fin2.jpg">
+     <!-- other items... -->
+    </div>
+</div>
+
+
       <div class="ae-container-fluid au-pt-4 au-pb-4">
         <div class="group-buttons"><a href="#0" class="au-mt-2 arrow-button arrow-button--right">Next Project<span class="arrow-cont">
               <svg>
@@ -83,58 +96,23 @@
               </svg></span></a></div>
       </div>
     </section>
-    <footer class="ae-container-fluid rk-footer ">
-      <div class="ae-grid ae-grid--collapse">
-        <div class="ae-grid__item item-lg-4 au-xs-ta-center au-lg-ta-left">
-          <ul class="rk-menu rk-footer-menu">
-            <li class="rk-menu__item"><a href="about.html" class="rk-menu__link">About</a>
-            </li>
-            <li class="rk-menu__item"><a href="documentation.html" class="rk-menu__link">Docs</a>
-            </li>
-            <li class="rk-menu__item"><a href="contact.html" class="rk-menu__link">Contact</a>
-            </li>
-          </ul>
-        </div>
-        <div class="ae-grid__item item-lg-4 au-xs-ta-center"><a href="#0" class="rk-social-btn ">
-            <svg>
-              <use xlink:href="assets/img/symbols.svg#icon-facebook"></use>
-            </svg></a><a href="#0" class="rk-social-btn ">
-            <svg>
-              <use xlink:href="assets/img/symbols.svg#icon-twitter"></use>
-            </svg></a><a href="#0" class="rk-social-btn ">
-            <svg>
-              <use xlink:href="assets/img/symbols.svg#icon-pinterest"></use>
-            </svg></a><a href="#0" class="rk-social-btn ">
-            <svg>
-              <use xlink:href="assets/img/symbols.svg#icon-tumblr"></use>
-            </svg></a></div>
-        <div class="ae-grid__item item-lg-4 au-xs-ta-center au-lg-ta-right">
-        </div>
-      </div>
-    </footer>
-    <script>// Get the modal
-        // Get the modal
-    var modal = document.getElementById('myModal');
-
-    // Get the image and insert it inside the modal - use its "alt" text as a caption
-    var img = document.getElementById('myImg');
-    var modalImg = document.getElementById("img01");
-    var captionText = document.getElementById("caption");
-    img.onclick = function(){
-        modal.style.display = "block";
-        modalImg.src = this.src;
-        captionText.innerHTML = this.alt;
-    }
-
-    // Get the <span> element that closes the modal
-    var span = document.getElementsByClassName("close")[0];
-
-    // When the user clicks on <span> (x), close the modal
-    span.onclick = function() { 
-        modal.style.display = "none";
-    }
-</script>
     <script src="assets/js/svg4everybody.min.js"></script>
+<script>
+var coll = document.getElementsByClassName("subgallery");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</script>
     <script>svg4everybody();</script>
   </body>
 </html>
