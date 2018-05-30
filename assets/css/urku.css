@@ -1264,7 +1264,7 @@ body {
 }
 
 .item-5 {
-  background-image: url("../img/project-5.jpg");
+  background-image: url("../img/dollihero.gif");
 }
 @media (min-width: 40em) {
   #layout-grid:checked ~ .rk-portfolio .item-5 {
@@ -1279,6 +1279,10 @@ body {
   #layout-grid:checked ~ .rk-portfolio .item-6 {
     background-position: top center;
   }
+}
+
+.foundhero {
+   background-image: url("../img/foundlinghero.gif"); 
 }
 
 .item-7 {
