@@ -21,8 +21,21 @@ body {
   margin:auto;
 }
 }
+.linkbutton{
+  background-color: white;
+  border: 2px solid black;
+  padding-top: 10px;
+  margin: 10px;
+  margin-top: 0;  
+  margin-bottom: 20px;
+  width: 200px;
+}
 
-.subgallery {
+.linkbutton:hover{
+  background-color: black;
+  color:white;
+}
+.subgallery{
     background-color: white;
     cursor: pointer;
     padding: 18px;
@@ -40,6 +53,10 @@ body {
   text-align: center;
 }
 
+.sub2 .subgallery button{
+  width: 25%;
+
+}
 
 /* Style the collapsible content. Note: hidden by default */
 .subgalcon {
