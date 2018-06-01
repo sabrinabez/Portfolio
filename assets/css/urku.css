@@ -1286,6 +1286,10 @@ body {
 .chameleon-1{
   background-image: url("../img/chameleon-1.jpg");
 }
+
+.dezine{
+   background-image: url("../img/dezinehero.jpg"); 
+}
 .ccb{
   background-image: url("../img/ccb1.png");
 }
@@ -1305,6 +1309,10 @@ body {
 @media only screen and (max-width: 500px){
   .chameleon-1{
   background-image: url(../img/chameleon-hero1.jpg);
+}
+
+.dezine{
+    background-image: url("../img/project-10a.jpg");  
 }
 
 .dhero{
