@@ -1270,6 +1270,10 @@ body {
   background-image: url("../img/chameleon-1.jpg");
 }
 
+.parkme{
+  background-image: url("../img/parkme1.jpg");
+}
+
 .dhero{
    background-image: url("../img/dollihero1.jpg"); 
 }
