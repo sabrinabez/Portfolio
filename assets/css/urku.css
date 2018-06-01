@@ -19,7 +19,7 @@ body {
   .aboutme{
   width: 300px;
   margin:auto;
-}
+  }
 }
 .linkbutton{
   margin: auto;
@@ -2177,6 +2177,14 @@ body {
           transform: translateY(0);
   visibility: visible;
   z-index: 2;
+}
+
+@media (min-width: 1024px){
+  @media (max-width: 1200px){
+      .rk-container .rk-menu__item{
+        width: 25%;
+      }
+  }
 }
 
 @media (max-width: 64em) {
