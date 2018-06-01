@@ -2186,6 +2186,11 @@ body {
       }
   }
 }
+  @media (max-width: 64em){
+      .rk-container .rk-menu__item{
+        width: 100%;
+      }
+  }
 
 @media (max-width: 64em) {
   #mobile-menu:checked ~ .rk-topbar .rk-navigation {
