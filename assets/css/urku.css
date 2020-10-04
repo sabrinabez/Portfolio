@@ -1290,6 +1290,9 @@ body {
 .disney-hero{
   background-image: url("../img/disney-hero.png");
 }
+.belong-hero{
+  background-image: url("../img/belonghero.png");
+}
 .insidedisney-hero{
   background-image: url("../img/insidedisney-hero.jpg");
 }
