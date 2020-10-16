@@ -1298,6 +1298,9 @@ body {
 .belong-hero{
   background-image: url("../img/belonghero.png");
 }
+.pi-hero{
+  background-image: url("../img/pi_header.png");
+}
 .insidedisney-hero{
   background-image: url("../img/insidedisney-hero.jpg");
 }
