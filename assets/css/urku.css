@@ -1291,6 +1291,10 @@ body {
   background-image: url("../img/disney-hero.png");
 }
 
+.ruthie{
+  background-image: url("../img/ruth-2.png");
+}
+
 .legal-hero{
   background-image: url("../img/legal-hero.png");
 }
@@ -1303,6 +1307,14 @@ body {
 }
 .insidedisney-hero{
   background-image: url("../img/insidedisney-hero.jpg");
+}
+
+.jewels{
+  background-image: url("../img/jewels-1.png");
+}
+
+.dis-cobrands{
+  background-image: url("../img/converse-1.png");
 }
 
 .mysticb{
