@@ -71,42 +71,53 @@
         </nav>
       </div>
     </header>
-    <section class="ae-container-fluid rk-main">
-      <section class="ae-container-fluid ae-container-fluid--inner loading rk-portfolio ">
-        <div class="rk-portfolio__items">
-        <div class="ae-grid ae-grid--collapse"> 
-                <div class="ae-grid"><div class = "ae-grid__item item-lg-12">
-        <h3 class="ae-u-bolder rk-portfolio-title"><br></h3></div>
-        <div class = "ae-grid__item item-lg-3">
-          <div class="xpadding"><img src = "assets/img/portrait_portfolio.jpg" height = "350"></div>
-                  <h3 class="ae-u-bolder rk-portfolio-title">Colorful Meets Professional</h3>
-          <p class="au-mb-4 contact__desc">Looking for someone who is flexible, fast, and friendly? You've come to the right place. When it comes to getting things done or knowing too much about video games and pop culture, I'd like to call myself an expert.<br> Welcome to my portfolio!</p></div> 
+    <section class="ae-container-fluid ae-container-fluid--full">
+      <header class="rk-portfolio-cover  appx-hero">
+      </header>
+      <div class="ae-container-fluid">
+        <div class="ae-grid ae-grid--collapse rk-portfolio-info ">
+          <div class="ae-grid__item item-lg-12 item-sm--center au-xs-ta-center au-lg-ta-left">
+            <div class = "xpadding">
+          <h3 class="ae-u-bolder rk-portfolio-title au-lg-ta-center">USAA AppX - Design and Testing</h3>
+          <p class = "rk-portfolio-inner-client au-lg-ta-center">Please note that these experiences are currently being implemented into USAA's App.<br>The current visuals on this page are limited due to items not being released yet.<br> I would be happy to showcase more of my work on this project in an interview.</p></div></div>
+          <div class="ae-grid__item item-lg-4 item-sm--center au-xs-ta-center au-lg-ta-center">
+            <div class="xpadding">
+          <h5 class="ae-u-bolder rk-portfolio-title au-lg-ta-left">AppX Policy Pages</h5>
+            <p class = "rk-portfolio-inner-client au-lg-ta-left">USAA's App experience had been due for an upgrade. My team was responsible for the Property and Casualty side of the app, meaning we would be handling the policy pages for Car Insurance, Homeowners Insurance, Renter's Insurance, Condo Insurance, Rental Property Insurance, and Umbrella Insurance. All the pages were developed using USAA's new design system, Reveille, and are formatted for both iOS mobile and tablet, as well as Android. Experiences were designed in Sketch, presented and tested with through Invision and Userzoom, and are currently being developed by our in-house team.<br><br>The current visuals on this page are limited due to items not being released yet.
+I would be happy to showcase more of my work on this project in an interview.</p></div>
+          </div>
 
-      <div class = "ae-grid__item item-lg-9">
-        <div class="xpadding">
-      <a href="uxdesign.html" class="rk-item">
-        <img src="assets/img/uxhero.png" />
-        <span class="item-meta">
-                <h2>User Experience</h2>
-        </span>
-      </a>
-      <a href="brandingpackaging.html" class="rk-item">
-        <img src="assets/img/packaginghero.png" />
-        <span class="item-meta">
-                <h2>Branding and Packaging</h2>
-        </span>
-      </a>
-      <a href="illustration.html" class="rk-item">
-        <img src="assets/img/illustrationhero.png" />
-        <span class="item-meta">
-                <h2>Illustration</h2>
-        </span>
-      </a>
-    </div></div>
-                           
-    </div>
-    </div>
+<div class="ae-grid__item item-lg-8">
+          <img src="assets/img/appx-image1.png" alt="Legal sitemap">
+</div>
+
+<div class="ae-grid__item item-lg-8">
+          <img src="assets/img/appx-test.png" alt="Legal sitemap">
+</div>
+
+          <div class="ae-grid__item item-lg-4 item-sm--center au-xs-ta-center au-lg-ta-center">
+            <div class="xpadding">
+          <h5 class="ae-u-bolder rk-portfolio-title au-lg-ta-left">AppX Testing and Finalization</h5>
+            <p class = "rk-portfolio-inner-client au-lg-ta-left">Once a policy experience was in the works, we would test its different features using Userzoom to conduct user studies. Test would include flows to find certain information or making adjustments to a policy. Our testers would note any pain points. We would watch and listen to their tests as well as review their marked answers to check for consistency and accuracy, and then compile the results into a presentation. We would then present the results to our business clients, and use it as leverage to either keep a page the same or make changes.<br><br>Due to most of the experiences not being live yet, and the presentations being internal, I cannot post these items here at this time. I would be happy to present and discuss all the tests I facilitated and showcase more of the design work if given the opportunity for an interview.</p></div>
+          </div>
     </section>
-    </section>
+    <script src="assets/js/svg4everybody.min.js"></script>
+<script>
+var coll = document.getElementsByClassName("subgallery");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+    <script>svg4everybody();</script>
   </body>
 </html>

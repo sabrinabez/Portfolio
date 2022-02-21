@@ -1299,6 +1299,14 @@ body {
   background-image: url("../img/legal-hero.png");
 }
 
+.storefront-hero{
+  background-image: url("../img/usaasf-hero.png");
+}
+
+.appx-hero{
+  background-image: url("../img/usaaAPPX-hero.png");
+}
+
 .belong-hero{
   background-image: url("../img/belonghero.png");
 }
@@ -2180,9 +2188,7 @@ body {
 .rk-menu__item.active {
   color: #a0a0a0;
 }
-.rk-menu__link {
-  padding-bottom: 4.2rem;
-}
+
 .rk-menu__sub {
   background-color: white;
   left: 0;
