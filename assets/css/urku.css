@@ -569,11 +569,12 @@ body {
   margin-bottom: .5rem;
   position: relative;
 }
-.rk-item.ae-masonry__item {
+.rk-item.ae-masonry__item { 
   display: inline-block;
   margin-bottom: 0;
 }
 .rk-item img {
+  border-radius: 2em; 
   display: block;
   width: 100%;
 }
