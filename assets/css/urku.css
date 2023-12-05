@@ -49,9 +49,14 @@ body {
   border: 2px solid black;       
 }
 
+.linkbutton h3 {
+  color: white;
+}
+
 .subgallery h2{
   margin: auto;
-  text-align: center; 
+  text-align: center;
+  color:white; 
 }
 
 .subgallery:hover{
@@ -569,12 +574,11 @@ body {
   margin-bottom: .5rem;
   position: relative;
 }
-.rk-item.ae-masonry__item { 
+.rk-item.ae-masonry__item {
   display: inline-block;
   margin-bottom: 0;
 }
 .rk-item img {
-  border-radius: 2em; 
   display: block;
   width: 100%;
 }
