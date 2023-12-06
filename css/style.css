@@ -3101,7 +3101,11 @@ h6 {
 
   /* End End Footer Area css
   ============================================================================================ */
-  .home_banner_area .banner_inner .home_left_img { }
+  .home_banner_area .banner_inner .home_left_img img {
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+  }
 
   .header_area .navbar .primary_btn {
     display: none; }
