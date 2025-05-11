@@ -18,6 +18,7 @@
   <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="top-fixed">
+
   <header class="header_area">
     <div class="main_menu">
       <nav class="navbar navbar-expand-lg navbar-light">
@@ -34,8 +35,8 @@
           <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
             <ul class="nav navbar-nav menu_nav justify-content-end">
               <li class="nav-item"><a class="nav-link" href="/index">Home</a></li>
-              <li class="nav-item active"><a class="nav-link" href="/about">About</a></li>
-              <li class="nav-item submenu dropdown">
+              <li class="nav-item"><a class="nav-link" href="/about">About</a></li>
+              <li class="nav-item active submenu dropdown">
                 <a href="" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
                  aria-expanded="false">UX UI Projects</a>
                 <ul class="dropdown-menu">
@@ -62,29 +63,66 @@
       </nav>
     </div>
   </header>
-    <div class="ae-container-fluid ae-container-fluid--inner rk-main">
-      <div class="ae-grid">
-      <div class="ae-grid ae-grid--collapse">        
+    <section class="ae-container-fluid ae-container-fluid--full">
+      <header class="rk-portfolio-cover jewels">
+      </header>
+      <div class="ae-container-fluid">
+        <div class="ae-grid ae-grid--collapse rk-portfolio-info ">
+          <div class="ae-grid__item item-lg-12 item-sm--center au-xs-ta-center au-lg-ta-left">
+            <div class = "xpadding">
+          <h1 class="ae-theta rk-portfolio-category ">Disney Jewels Branding for Walmart</h1>
+            <p class = "rk-portfolio-inner-client">Walmart wanted to launch a new line of higher end Disney jewelry for their stores, with price tags ranging between $60 - $300 dollars. I was tasked with designing a logo and look for the brand, knowing just the price range, the trends, and the name "jewels". I concepted some geometric approaches, which I was told to skew towards, and came up with a variety of results. The end result is beautiful yet playful, being youthful yet refined, fit for all ages. It was a pleasure to work on the project, and both Disney and Walmart was extremely happy with the brand look. You can now find Disney Jewels at Walmarts nationwide.
+            </p>
+          </div></div>         
+        </div>
+      </div>
+        <div class="ae-grid ae-grid--collapse">
         <div class="ae-grid__item item-lg-8">
-        <div class="ae-grid__item item-lg-10 au-xs-ta-center au-lg-ta-left xpadding">
-          <h4 class="ae-u-bolder conatct__title">All About Me</h4>
-          <p class="au-mb-4 contact__desc">I'm a UX/UI designer from the heart of Orange County, California. My specialties are User Experience, User Interface, Branding, and Packaging. I believe a designer should know the code behind what they're designing, and how difficult things can be for the developers. That's why I have a minor in User Experience, and have learned several coding languages including HTML, CSS, Javascript, Java, and Python. I even coded this website myself!<br><br>
-          I am a graduate of California Polytechnic State University, San Luis Obispo. I've got a passion for solving problems, getting things done, and doing what's right. I have enough energy for a power plant and I'm an extremely fast learner. I'm super flexible and love doing new things, so I've got quite a few tools on my belt already.
-          <h6 class="ae-u-bolder conatct__title">Hobbies</h6>
-          I am an avid gamer and I dream of doing work on my favorite games, whether they be video, card, or board games! I love Dungeons and Dragons, Overwatch, Apex Legends, and Hearthstone. When I'm not gaming, I enjoy roller skating and kickboxing.
-      <br>
-          If all this and more sounds good to you, I'd love to have a chat some time. The sky's the limit!<br>
-                    <span class="rk-light-color">LinkedIn </span><a href = "https://www.linkedin.com/in/sabrina-bezar/" target="_blank">sabrina-bezar</a></span><br><span class="contact__email au-block au-truncate"><span class="rk-light-color">Email &nbsp;&nbsp; </span><a href="#0">sabrinabezar@gmail.com</a></span></div></div>
-         <div class = "aboutme ae-grid__item item-lg-4"><img src = "assets/img/portrait_portfolio.jpg" height = "350">
-          <h6 class="ae-u-bolder conatct__title">Where I'm at Now</h6>
-          <p class="au-mb-4 contact__desc">
-          I'm currently Senior Product Designer at working at Evolus Inc, and a Senior User Experience Designer working at USAA. I do both websites and app experiences.<br></p>
-          </div>
+          <img src="assets/img/jewels-4.png" alt="Jewels Logo">
+</div>
+          <div class="ae-grid__item item-lg-4"><img src="assets/img/jewels-6.png" alt="Jewels Box"></div>          
+        </div>
+      </div>
+      <div class="ae-container-fluid">
+        <div class="ae-grid ae-grid--collapse rk-portfolio-info ">
+          <div class="ae-grid__item item-lg-12 item-sm--center au-xs-ta-center au-lg-ta-center">
+            <h2 class="rk-portfolio-inner-title ">Disney Jewels Logo Process</h2>
           </div>
         </div>
       </div>
-    </div>
-    <script src="js/jquery-3.2.1.min.js"></script>
+        <div class="ae-grid ae-grid--collapse item-sm--center au-xs-ta-center">
+        <div class="ae-grid__item item-lg-12">
+          <img src="assets/img/jewels-2.png" alt="Jewels Process">
+</div>
+        <div class="ae-grid__item item-lg-12">
+          <img src="assets/img/jewels-3.png" alt="Jewels Process">
+</div>
+        <div class="ae-grid__item item-lg-12">
+          <img src="assets/img/jewels-1.png" alt="Jewels Process">
+</div>        
+        </div>
+      </div>
+
+    </section>
+    <script src="assets/js/svg4everybody.min.js"></script>
+<script>
+var coll = document.getElementsByClassName("subgallery");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+    <script>svg4everybody();</script>
+<script src="js/jquery-3.2.1.min.js"></script>
   <script src="js/popper.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/stellar.js"></script>
