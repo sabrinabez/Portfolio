@@ -1,0 +1,373 @@
+// main: ../main.scss
+/*--------------------------------------------------------------
+# Resume Section
+--------------------------------------------------------------*/
+.resume {
+  .resume-navigation {
+    gap: 4rem;
+    margin-bottom: 5rem;
+    padding: 2rem 0;
+    border-bottom: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+    border: none;
+
+    @media(max-width: 992px) {
+      padding: 0;
+    }
+
+    .nav-item {
+      .nav-link {
+        background: none;
+        border: none;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        cursor: pointer;
+        padding: 1rem 1.5rem;
+        border-radius: 0;
+        transition: all 0.3s ease;
+        position: relative;
+        color: var(--default-color);
+
+        .nav-number {
+          font-size: 0.875rem;
+          font-weight: 300;
+          color: color-mix(in srgb, var(--default-color), transparent 50%);
+          transition: color 0.3s ease;
+        }
+
+        .nav-label {
+          font-size: 1rem;
+          font-weight: 400;
+          color: var(--default-color);
+          transition: color 0.3s ease;
+        }
+
+        &::after {
+          content: '';
+          position: absolute;
+          bottom: -2rem;
+          left: 50%;
+          transform: translateX(-50%) scaleX(0);
+          width: 100%;
+          height: 2px;
+          background: var(--accent-color);
+          transition: transform 0.3s ease;
+        }
+
+        &:hover,
+        &.active {
+          background: none;
+          border: none;
+          box-shadow: none;
+
+          .nav-number {
+            color: var(--accent-color);
+          }
+
+          .nav-label {
+            color: var(--accent-color);
+          }
+
+          &::after {
+            transform: translateX(-50%) scaleX(1);
+          }
+        }
+
+        &:focus {
+          outline: none;
+          box-shadow: none;
+        }
+
+        @media(max-width: 992px) {
+          &::after {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+
+  .resume-content {
+    .tab-pane {
+      min-height: 400px;
+    }
+
+    .section-intro {
+      text-align: center;
+      max-width: 600px;
+      margin: 0 auto 4rem;
+
+      h2 {
+        font-size: 2.25rem;
+        font-weight: 300;
+        margin-bottom: 1.5rem;
+        letter-spacing: -0.02em;
+      }
+
+      p {
+        font-size: 1.125rem;
+        line-height: 1.7;
+        color: color-mix(in srgb, var(--default-color), transparent 30%);
+        font-weight: 300;
+      }
+    }
+  }
+
+  .experience-grid {
+    max-width: 800px;
+    margin: 0 auto;
+
+    .experience-item {
+      padding: 2.5rem 0;
+      border-bottom: 1px solid color-mix(in srgb, var(--default-color), transparent 92%);
+
+      &:last-child {
+        border-bottom: none;
+      }
+
+      .item-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 1.5rem;
+
+        .position-info {
+          h3 {
+            font-size: 1.375rem;
+            font-weight: 400;
+            margin-bottom: 0.5rem;
+            line-height: 1.3;
+          }
+
+          .company {
+            font-size: 1rem;
+            color: var(--accent-color);
+            font-weight: 400;
+          }
+        }
+
+        .period {
+          font-size: 0.9rem;
+          color: color-mix(in srgb, var(--default-color), transparent 40%);
+          font-weight: 300;
+          white-space: nowrap;
+          margin-left: 2rem;
+        }
+      }
+
+      .item-content {
+        p {
+          font-size: 1rem;
+          line-height: 1.7;
+          color: color-mix(in srgb, var(--default-color), transparent 25%);
+          margin: 0;
+          font-weight: 300;
+        }
+      }
+    }
+  }
+
+  .education-list {
+    max-width: 700px;
+    margin: 0 auto;
+
+    .education-entry {
+      display: flex;
+      gap: 3rem;
+      padding: 2rem 0;
+      border-bottom: 1px solid color-mix(in srgb, var(--default-color), transparent 92%);
+
+      &:last-child {
+        border-bottom: none;
+      }
+
+      .degree-year {
+        flex-shrink: 0;
+        font-size: 1.125rem;
+        font-weight: 400;
+        color: var(--accent-color);
+        width: 80px;
+      }
+
+      .degree-details {
+        flex: 1;
+
+        h3 {
+          font-size: 1.25rem;
+          font-weight: 400;
+          margin-bottom: 0.5rem;
+          line-height: 1.3;
+        }
+
+        .institution {
+          font-size: 1rem;
+          color: color-mix(in srgb, var(--default-color), transparent 30%);
+          margin-bottom: 1rem;
+          font-weight: 300;
+        }
+
+        p {
+          font-size: 0.95rem;
+          line-height: 1.6;
+          color: color-mix(in srgb, var(--default-color), transparent 35%);
+          margin: 0;
+          font-weight: 300;
+        }
+      }
+    }
+  }
+
+  .skills-categories {
+    max-width: 800px;
+    margin: 0 auto;
+
+    .skill-category {
+      margin-bottom: 3rem;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      h3 {
+        font-size: 1.25rem;
+        font-weight: 400;
+        margin-bottom: 1.5rem;
+        text-align: center;
+      }
+
+      .skill-tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        justify-content: center;
+
+        .skill-tag {
+          background: var(--surface-color);
+          border: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
+          padding: 0.75rem 1.5rem;
+          font-size: 0.9rem;
+          font-weight: 300;
+          color: var(--default-color);
+          border-radius: 0;
+          transition: all 0.3s ease;
+
+          &:hover {
+            border-color: var(--accent-color);
+            color: var(--accent-color);
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 992px) {
+    .resume-navigation {
+      gap: 2rem;
+      margin-bottom: 3rem;
+
+      .nav-item .nav-link {
+        padding: 0.75rem 1rem;
+
+        .nav-label {
+          font-size: 0.9rem;
+        }
+      }
+    }
+
+    .section-intro {
+      margin-bottom: 3rem;
+
+      h2 {
+        font-size: 1.875rem;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+    }
+
+    .experience-grid .experience-item .item-header {
+      flex-direction: column;
+      gap: 1rem;
+
+      .period {
+        margin-left: 0;
+      }
+    }
+
+    .education-list .education-entry {
+      gap: 2rem;
+
+      .degree-year {
+        width: 60px;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .resume-navigation {
+      flex-direction: column;
+      gap: 1rem;
+      align-items: center;
+
+      .nav-item {
+        width: 100%;
+
+        .nav-link {
+          justify-content: center;
+          width: 100%;
+        }
+      }
+    }
+
+    .education-list .education-entry {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .skills-categories .skill-category .skill-tags {
+      gap: 0.75rem;
+
+      .skill-tag {
+        padding: 0.6rem 1.2rem;
+        font-size: 0.85rem;
+      }
+    }
+  }
+
+  @media (max-width: 576px) {
+    .section-intro {
+      h2 {
+        font-size: 1.625rem;
+      }
+    }
+
+    .experience-grid .experience-item {
+      padding: 2rem 0;
+
+      .item-header .position-info h3 {
+        font-size: 1.25rem;
+      }
+    }
+
+    .skills-categories .skill-category .skill-tags .skill-tag {
+      padding: 0.5rem 1rem;
+      font-size: 0.8rem;
+    }
+
+    .resume-navigation {
+      .nav-item .nav-link {
+        padding: 0.5rem 1rem;
+        gap: 0.5rem;
+
+        .nav-number {
+          font-size: 0.75rem;
+        }
+
+        .nav-label {
+          font-size: 0.85rem;
+        }
+      }
+    }
+  }
+}

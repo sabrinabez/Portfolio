@@ -1,0 +1,144 @@
+// main: ../main.scss
+/*--------------------------------------------------------------
+# Skills Section
+--------------------------------------------------------------*/
+.skills {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  /* Design tokens for this section */
+  --radius: 8px;
+  --muted: color-mix(in srgb, var(--default-color), transparent 65%);
+  --soft-border: color-mix(in srgb, var(--default-color), transparent 85%);
+  --soft-shadow: 0 8px 24px color-mix(in srgb, var(--default-color), transparent 94%);
+  --accent-soft: color-mix(in srgb, var(--accent-color), var(--background-color) 85%);
+
+  .skill-block {
+    padding: 22px 6px 6px 6px;
+    border-radius: var(--radius);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    position: relative;
+
+    &:hover {
+      transform: translateY(-2px);
+    }
+
+    header {
+      .skill-title {
+        font-size: 18px;
+        font-weight: 400;
+        margin: 0;
+      }
+
+      .skill-badge {
+        font-size: 12px;
+        padding: 4px 10px;
+        border-radius: 999px;
+        color: var(--accent-color);
+        background: color-mix(in srgb, var(--accent-color), transparent 92%);
+        border: 1px solid color-mix(in srgb, var(--accent-color), transparent 80%);
+      }
+    }
+
+    .skill-desc {
+      color: var(--muted);
+      font-size: 15px;
+      line-height: 1.8;
+      margin-bottom: 14px;
+    }
+
+    .progress.slim {
+      height: 6px;
+      background-color: color-mix(in srgb, var(--default-color), transparent 90%);
+      border-radius: 999px;
+      overflow: hidden;
+
+      .progress-bar {
+        width: 0%;
+        background: linear-gradient(90deg, var(--accent-color), color-mix(in srgb, var(--accent-color), transparent 20%));
+        transition: width 0.6s ease-in-out;
+      }
+    }
+  }
+
+  .soft-card {
+    background: var(--surface-color);
+    border: 1px solid var(--soft-border);
+    box-shadow: var(--soft-shadow);
+
+    .mini-head {
+      font-weight: 400;
+      letter-spacing: 0.3px;
+      font-size: 16px;
+      color: var(--heading-color);
+      margin-bottom: 10px;
+    }
+
+    .tool-list {
+      li {
+        padding: 8px 0;
+        border-bottom: 1px dashed color-mix(in srgb, var(--default-color), transparent 88%);
+
+        &:last-child {
+          border-bottom: 0;
+        }
+
+        i {
+          color: var(--accent-color);
+          font-size: 18px;
+          line-height: 1;
+        }
+
+        span {
+          color: var(--default-color);
+        }
+      }
+    }
+  }
+
+  .note {
+    color: var(--muted);
+    font-size: 16px;
+    line-height: 1.8;
+  }
+
+  /* Focus styles for accessibility */
+  a,
+  button,
+  .skill-block,
+  .soft-card {
+    &:focus-visible {
+      outline: 2px solid var(--accent-color);
+      outline-offset: 3px;
+      border-radius: calc(var(--radius) - 2px);
+    }
+  }
+
+  /* Subtle divider behavior via spacing rhythm */
+  .alt-grid {
+    margin-top: 60px;
+  }
+
+  /* Swiper compatibility snippet (kept global for any future slider inside) */
+  .swiper-wrapper {
+    height: auto !important;
+  }
+
+  /* Responsive tweaks */
+  @media (max-width: 992px) {
+    .intro-wrap {
+      .headline {
+        font-size: clamp(26px, 4.2vw, 36px);
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .soft-card {
+      padding: 24px !important;
+    }
+
+    .skill-block {
+      padding-top: 18px;
+    }
+  }
+}
