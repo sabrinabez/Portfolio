@@ -2578,8 +2578,26 @@ section .hero {
   max-width: 700px;
 }
 
+..xlframe{
+  max-width: 1200px;
+}
+
+.iframe-container .xlframe{
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  min-height: 600px;
+}
+
 @media screen and (max-width: 500px) {
   .iframe-container {
+    min-height: 200px;
+  }
+  .iframe-container .xlframe{
     min-height: 200px;
   }
 }
